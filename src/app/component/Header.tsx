@@ -1,9 +1,6 @@
-interface HeaderProps {
-    activeMenu: boolean;
-    setActiveMenu: (active: boolean) => void;
-}
+import { activateMenuProps } from '../layout';
 
-export default function Header({ activeMenu, setActiveMenu }: HeaderProps) {
+export default function Header({ activateMenu: activeMenu, setActiveMenu }: activateMenuProps) {
     return (
         <header className="h-16 flex items-stretch">
             <button className="w-16 sm:hidden" onClick={() => setActiveMenu(!activeMenu)}>
