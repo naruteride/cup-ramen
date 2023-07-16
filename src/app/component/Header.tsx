@@ -1,5 +1,6 @@
 "use client"
 import { operateNavigator } from "./Navigator";
+import Search from "./Search";
 
 export default function Header() {
 
@@ -8,9 +9,7 @@ export default function Header() {
             <button className="w-16 sm:hidden" onClick={operateNavigator}>
                 메뉴
             </button>
-            <search className="flex-1">
-                서치
-            </search>
+            <Search />
         </header>
     )
 }
