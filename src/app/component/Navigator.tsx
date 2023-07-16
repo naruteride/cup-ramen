@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 
 export default function Navigator() {
     return (
@@ -14,10 +15,12 @@ export function NavigatorBackground() {
     return (
         <div
             id="NavigatorBackground"
-            className="fixed -z-10 opacity-0 top-0 right-0 bottom-0 left-0 bg-black/30 backdrop-blur-sm duration-200"
+            className="fixed -z-10 flex flex-col items-end opacity-0 top-0 right-0 bottom-0 left-0 bg-black/30 backdrop-blur-sm duration-200"
             onClick={operateNavigator}
         >
-
+            <svg className="m-4 w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13"></path>
+            </svg>
         </div>
     )
 }
