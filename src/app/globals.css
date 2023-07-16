@@ -16,7 +16,6 @@ body {
   grid-template-areas:
     "navigator header"
     "navigator main";
-  
 }
 
 nav {
